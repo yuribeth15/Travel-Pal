@@ -1,0 +1,61 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added by Phonegap
+*/
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+/* All this style is added by me  */
+input{
+    padding: 12px 80px;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+  
+  }
+  /* Hides the spin box for the currency inputs in Chrome*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hides the spin box for the currency inputs in Firefox*/
+input[type=number] {
+  -moz-appearance:textfield; 
+}
+  
+#map {
+      height: 400px;
+      width: 100%;
+     }
+  
+#icon {
+      position: relative;
+  
+    }
+#icon i {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 35px;
+  
+    }
+
+#date{
+      display: inline-block;
+    }
+
+#local-currency{
+      display: inline-block;
+    }
+
+.toolbar-inner i{
+      font-size: 38px;
+      margin-bottom: 1%;
+    } 
+
+.toolbar-inner button{
+      margin-bottom: 1%;
+    }  
