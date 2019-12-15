@@ -42,6 +42,12 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     myApp.alert('Here comes About page');
 })
 
+//This are global variable in order to access to them later on, in the code
+var lat = null;
+var long = null;
+var safeGeoInfotmation;
+var saveWeatherInformation;
+
 //requesting access to the file system
 function tryingFile(){
 
@@ -120,12 +126,6 @@ function readFile(fileEntry) {
 
     }, onError);
 }
-
-//This are global variable in order to access to them later on, in the code
-var lat = null;
-var long = null;
-var safeGeoInfotmation;
-var saveWeatherInformation;
 
 //function provided by phonegap to access to GPS sensor
 function getCurrentLocation(){
