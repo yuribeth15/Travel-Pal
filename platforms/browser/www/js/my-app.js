@@ -90,7 +90,6 @@ function writeFile(fileEntry, dataObj) {
         fileWriter.write(dataObj);
 
         fileWriter.onwriteend = function() {
-            alert("Succesfully Save");
             console.log("Successful file write");
         };
 
@@ -150,7 +149,7 @@ function geoCallback(position){
                      console.log(post);
     
     //once the information from the API is fetch I can extract specific information from it 
-    var coordinates ='<h2>'+'Welcome To '+ post.results[0].components.country +' '+ post.results[0].components.city  + '</h2>';
+    var coordinates ='Welcome To '+ post.results[0].components.country +' '+ post.results[0].components.city;
     var localTime ='The Local Date and Time is: <br> ' + post.timestamp.created_http;
     var localCurrency = ' The Local Currency is: <br> ' + post.results[0].annotations.currency.symbol + 
                         ' - ' + post.results[0].annotations.currency.name;
